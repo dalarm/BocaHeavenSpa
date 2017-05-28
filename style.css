@@ -5,6 +5,16 @@
     background-size: cover;
 }
 
+@media all and (min-width: 320px) and (max-width: 699px) {
+  #gifts {
+    font-size: 8px;
+  }
+
+  #treatments {
+   font-size: 8px;
+   }
+}
+
 .dropdown {
 	color: #9d9d9d;
     display: inline-block;
