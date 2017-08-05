@@ -5,16 +5,6 @@
     background-size: cover;
 }
 
-@media all and (min-width: 320px) and (max-width: 900px) {
-  #gifts {
-    font-size: 8px;
-  }
-
-  #treatments {
-   font-size: 8px;
-   }
-}
-
 .dropdown {
 	color: #9d9d9d;
     display: inline-block;
@@ -51,6 +41,25 @@ body, html {
 }
 
 
+.fonts {
+	font-size: 18px; 
+}
+
+
+
+.titles{
+	font-size: 25px;
+}
+
+@media screen and (max-width: 1000px){
+	
+	.fonts{
+		font-size: 13px;
+	}
+	
+}
+	
+
 /* Home */
 .bg1{
 	background-image: url('images/heaven.jpg');
@@ -78,41 +87,39 @@ body {
 	margin: 0;
 }
 
+
+#contacts{
+	padding-bottom: 200%;
+}
+
 #map{
-	height: 400px;
+	height: 100%;
 	width: 40%;
+	position: absolute;
 }
 
 #address{
-	right: 35px; 
-	width: 525px; 
 	position: absolute; 
-	height: 50px;
+
 	text-decoration: underline;
 }
 
 #adp{
-	right: 35px;
-	width: 525px;
-	position: absolute; 
-	height: 50px;
-	top: 4850px;
+
+	position: relative; 
+	padding-left: 50%
+
 }
 
 #ohp{
-	right: 35px;
-	width: 525px;
+
 	position: absolute; 
-	height: 50px;
-	top: 5100px;
+
 }
 
 #opening{
-	right: 35px; 
-	width: 525px; 
 	position: absolute; 
-	height: 50px; 
-	top: 5050px;
+
 	text-decoration: underline;
 }
 
