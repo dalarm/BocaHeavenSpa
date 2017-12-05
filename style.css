@@ -5,6 +5,32 @@
     background-size: cover;
 }
 
+/* Home */
+.bg1{
+	background-image: url('images/heaven.jpg');
+	min-height: 100%;
+}
+/*Treatment*/
+                         
+.bg2{
+	background-image: url("images/flower.jpg");
+	min-height: 400px;
+}
+/*Gift*/  
+.bg3{
+	background-image: url("images/rocks.jpg");
+	min-height: 400px;
+}
+/*Contact*/ 
+.bg4{
+	background-image: url("images/leaf.jpg");
+	min-height: 400px;
+}
+
+.crim{
+	font-family: 'Crimson Text', serif; 
+}
+
 .dropdown {
 	color: #9d9d9d;
     display: inline-block;
@@ -30,9 +56,24 @@
     display: block;
 }
 
-.crim{
-	font-family: 'Crimson Text', serif; 
+.fonts {
+	font-size: 20px; 
 }
+
+.mainTitle{
+	font-size: 40px; 
+}
+
+.price{
+	padding-left: 1em;
+}
+
+.titles{
+	font-size: 25px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
 body, html { 
     height: 100%;
@@ -40,53 +81,42 @@ body, html {
     line-height: 1.8;
 }
 
-
-.fonts {
-	font-size: 18px; 
-}
-
-
-
-.titles{
-	font-size: 25px;
-}
-
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1024px){
 	
 	.fonts{
 		font-size: 13px;
 	}
 	
-}
+	.bg1, .bg2, .bg3, .bg4 {
+		background-attachment: scroll;
+	}
 	
+	.mainTitle{
+		font-size:27px;
+	}
 
-/* Home */
-.bg1{
-	background-image: url('images/heaven.jpg');
-	min-height: 100%;
-}
-/*Treatment*/
-
-                          
-.bg2{
-	background-image: url("images/flower.jpg");
-	min-height: 400px;
-}
-/*Gift*/  
-.bg3{
-	background-image: url("images/rocks.jpg");
-	min-height: 400px;
-}
-/*Contact*/ 
-.bg4{
-	background-image: url("images/leaf.jpg");
-	min-height: 400px;
+	.titles{
+		font-size:19px;
+	}
 }
 
-body {
-	margin: 0;
+
+#address{
+	position: absolute; 
+	text-decoration: underline;
 }
 
+#adp{
+	position: relative; 
+	padding-left: 50%
+}
+
+#bottomfoot{
+	position: absolute;
+	background: black;
+	width: 100%;
+	padding-left: 7px;
+}
 
 #contacts{
 	padding-bottom: 200%;
@@ -98,23 +128,9 @@ body {
 	position: absolute;
 }
 
-#address{
-	position: absolute; 
-
-	text-decoration: underline;
-}
-
-#adp{
-
-	position: relative; 
-	padding-left: 50%
-
-}
 
 #ohp{
-
 	position: absolute; 
-
 }
 
 #opening{
@@ -123,18 +139,6 @@ body {
 	text-decoration: underline;
 }
 
-#bottomfoot{
-	position: absolute;
-	background: black;
-	width: 100%;
-	padding-left: 7px;
-}
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
-@media only screen and (max-device-width: 1024px) {
-	.bg1, .bg2, .bg3, .bg4 {
-		background-attachment: scroll;
-	}
-} 
