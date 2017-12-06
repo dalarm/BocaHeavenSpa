@@ -27,6 +27,10 @@
 	min-height: 400px;
 }
 
+.bottomfoot{
+	font-size: 20px;
+}
+
 .crim{
 	font-family: 'Crimson Text', serif; 
 }
@@ -91,6 +95,10 @@ body, html {
 		background-attachment: scroll;
 	}
 	
+	.bottomfoot{
+		font-size: 15px;
+    }
+	
 	.mainTitle{
 		font-size:27px;
 	}
@@ -111,12 +119,6 @@ body, html {
 	padding-left: 50%
 }
 
-#bottomfoot{
-	position: absolute;
-	background: black;
-	width: 100%;
-	padding-left: 7px;
-}
 
 #contacts{
 	padding-bottom: 200%;
