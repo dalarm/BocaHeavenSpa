@@ -330,7 +330,10 @@ $(document).ready(function() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: location,
-		  scrollwheel: true
+		  scrollwheel: true,
+		  streetViewControl: false,
+		  mapTypeControl: false,
+		  fullscreenControl: false
         });
         var marker = new google.maps.Marker({
           position: location,
