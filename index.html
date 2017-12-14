@@ -14,8 +14,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6SJS8F9fhRy-ugydcJaI8aX3T-MOTTjA&callback=initMap"> </script>	
 	
 	
 	<title>Boca Heaven Spa</title>
@@ -24,11 +24,16 @@
 </head>	
 
 
-
-
-
 <body>
+
 	
+<div id="loader-wrapper">
+	<div id="loader">	<p class="crim loadTitle"> <b>BHS</b></p></div>
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+</div>
+
+
 <div class="w3-top">
 	<nav class="navbar navbar-inverse navbar-static-top">
 		<div class="container-fluid">
@@ -90,7 +95,6 @@
 
 <!-- Container (Treatments) -->
 	<div class="w3-content we3-container w3-padding-64" id="treatments">
-
 		<h3 class="w3-center w3-border-bottom crim"><b>TREATMENTS</b><h3>
 			<div class="crim w3-display-container w3-hover-opacity">
 				<p class="fonts"><b class="titles">Korean Body Scrub</b> <b class="price">$70.00</b>
@@ -170,7 +174,7 @@
 			
 			<div class="crim w3-display-container w3-hover-opacity">
 				<p class="fonts"><b class="titles">Deep Tissue Massage</b> <b class="price">$80/hour </b></br>
-				This massage focuses on releasing chronic mscle tension. </br>
+				This massage focuses on releasing chronic muscle tension. </br>
 				The therapist will target the deepest layers of muscle tissue. 
 				</br></br>
 				</p>
@@ -321,9 +325,16 @@
 </footer> 
 </div>
 
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6SJS8F9fhRy-ugydcJaI8aX3T-MOTTjA&callback=initMap"> </script>
+
 <script>
 $(document).ready(function() {
-    initMap();
+	setTimeout(function(){
+        $('body').addClass('loaded');
+    }, 3000);
+	google.maps.event.addDomListener(window, 'load', initMap);
+	initMap();
 });
       function initMap() {
         var location = {lat: 26.364167, lng: -80.089644};
@@ -348,7 +359,5 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 });
 	  
 </script>
-
-
 </body>	
 </html> 
