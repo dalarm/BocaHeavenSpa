@@ -48,11 +48,8 @@
 				<div class="collapse navbar-collapse" id="myNav">
 					<ul class="nav navbar-nav crim">
 						<li><a href="#spa">The Spa</a></li>
-						<li class="dropdown"><a href="#treatments">Treatments</a>
-							<div class="dropdown-content">
-								<a href="#gifts">Gift Certificates</a>
-							</div>
-						</li>
+						<li><a href="#treatments">Treatments</a></li>
+						<li><a href="#gifts">Gift Certificates</a></li>
 						<li><a href="#contacts">Contact</a></li>
 					</ul>
 				</div>
@@ -233,6 +230,19 @@
 				</br></br>
 				</p>
 			</div>
+
+			<div class="crim w3-display-container w3-hover-opacity">
+				<p class="fonts"><b class="titles">Body Scrub</b>  <b class="price">$70.00</b></br>
+				</br></br>
+				</p>
+			</div>
+
+			<div class="crim w3-display-container w3-hover-opacity">
+				<p class="fonts"><b class="titles">Massage</b>  <b class="price">$80.00</b></br>
+				A one hour massage.
+				</br></br>
+				</p>
+			</div>
 			
 			<div class="crim w3-display-container w3-hover-opacity">
 				<p class="fonts"><b class="titles">Gift Card</b> <b class="price">$50.00+</b>
@@ -307,7 +317,7 @@
 			<p class="crim fonts"><b id="address">ADDRESS</b></br><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;561-409-3500 </br><i class="fa fa-envelope" aria-hidden="true"></i> bocaheavenspa@gmail.com </br>
 			<i class="fa fa-address-card" aria-hidden="true"></i>1580 NW Boca Raton Blvd</br>&emsp;&nbsp; Suite 6</br>&nbsp;&emsp; Boca Raton, FL 33432 </br></br>
 			</br><b id="address">OPENING HOURS</b></br> 
-			<b>Mon – Sat:</b> 9:00 am - 10:00 pm </br><b>Sun:</b> 10:00 am - 9:00 pm</p>
+			<b>Mon – Sat:</b> 10:00 am - 10:00 pm </br><b>Sun:</b> 11:00 am - 8:00 pm</p>
 		</div>
 	</div> 
 </div>
@@ -332,7 +342,7 @@
 $(document).ready(function() {
 	setTimeout(function(){
         $('body').addClass('loaded');
-    }, 7000);
+    }, 3000);
 	google.maps.event.addDomListener(window, 'load', initMap);
 	initMap();
 });
