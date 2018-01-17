@@ -233,6 +233,7 @@
 
 			<div class="crim w3-display-container w3-hover-opacity">
 				<p class="fonts"><b class="titles">Body Scrub</b>  <b class="price">$70.00</b></br>
+				</br></br>
 				</p>
 			</div>
 
@@ -338,6 +339,11 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6SJS8F9fhRy-ugydcJaI8aX3T-MOTTjA&callback=initMap"> </script>
 
 <script>
+	$(window).on('load',function(){
+   // PAGE IS FULLY LOADED  
+   // FADE OUT YOUR OVERLAYING DIV
+   $('body').addClass('loaded');
+});
 $(document).ready(function() {
 	setTimeout(function(){
         $('body').addClass('loaded');
